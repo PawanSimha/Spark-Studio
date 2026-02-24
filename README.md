@@ -20,7 +20,7 @@
 
 ## 📌 Project Overview
 
-**Spark Studio** is a premium digital agency website built with a modern, Apple-inspired aesthetic. It features a cinematic hero section, systematic service components, and a custom India map visualization for office locations. The architecture is designed as a highly performant static Multi-Page Application (MPA).
+**Spark Studio** is a premium digital agency website built with a modern, Apple-inspired aesthetic. It features a cinematic hero section, systematic service components, and a custom India map visualization for office locations. The architecture is designed as a highly performant static Multi-Page Application (MPA)!
 
 ## 🏆 Project Evaluation & Audit Results
 
