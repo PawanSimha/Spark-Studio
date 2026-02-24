@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Spark Studio</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/logo's/Spark Studio.png" />
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Stay updated with the latest trends, insights, and case studies in web design, development, and digital marketing from the Spark Studio team." />
+  <meta name="keywords"
+    content="design blog, founder journey, creative agency, digital marketing tips, web development insights" />
+  <meta name="author" content="Pawan Simha" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Spark Studio Blog" />
+  <meta property="og:description"
+    content="Stay updated with the latest trends, insights, and case studies in web design, development, and digital marketing." />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/preview.png" />
+  <meta property="og:url" content="https://yourdomain.com/pages/blog.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services | Spark Studio" />
+  <meta name="twitter:description"
+    content="Explore our full range of digital services from branding to game development." />
+  <meta name="twitter:image" content="https://yourdomain.com/assets/images/preview.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Spark Studio",
+      "url": "https://yourdomain.com",
+      "logo": "/assets/images/logo's/1.png",
+      "sameAs": [
+        "https://twitter.com/iampawansimha",
+        "https://www.linkedin.com/in/pawansimha",
+        "https://github.com/PawanSimha"
+      ]
+    }
+    </script>
+
+  <!-- Preconnect for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+
+  <!-- Content Security Policy Placeholder -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com;"> -->
+</head>
+
+<body class="antialiased">
+
+  <!-- Header -->
+  <div data-include="/components/header.html"></div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="min-h-[50vh] flex items-center justify-center relative overflow-hidden bg-light py-24">
+      <div class="floating-icons mt-12">
+        <div class="floating-icon"><i class="fas fa-pen-nib"></i></div>
+        <!-- <div class="floating-icon"><i class="fas fa-book-open"></i></div> -->
+        <div class="floating-icon"><i class="fas fa-keyboard"></i></div>
+        <div class="floating-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="floating-icon"><i class="fas fa-feather-alt"></i></div>
+        <div class="floating-icon"><i class="fas fa-blog"></i></div>
+        <div class="floating-icon"><i class="fas fa-newspaper"></i></div>
+        <div class="floating-icon"><i class="fas fa-edit"></i></div>
+        <div class="floating-icon"><i class="fas fa-file-alt"></i></div>
+        <!-- <div class="floating-icon"><i class="fas fa-paragraph"></i></div> -->
+      </div>
+      <div class="container mx-auto px-4 text-center relative z-10 pt-16">
+        <div class="fade-in">
+          <h1 class="font-display text-4xl md:text-6xl font-bold text-primary mb-4">
+            Our <span class="gradient-text">Blog</span>
+          </h1>
+          <p class="text-lg md:text-xl text-secondary max-w-2xl mx-auto">
+            Stay updated with the latest trends, insights, and case studies in web design, development, and digital
+            marketing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12">
+
+          <!-- Blog Posts -->
+          <div class="lg:col-span-2 space-y-12">
+            <!-- Featured Post -->
+            <div class="blog-card overflow-hidden fade-in">
+              <a href="/pages/contact.html" target="_blank" class="block overflow-hidden rounded-t-2xl">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1784&auto=format&fit=crop"
+                  alt="Team members collaborating in a modern office"
+                  class="w-full h-80 object-cover transition-transform duration-300 hover:scale-105">
+              </a>
+              <div class="p-8">
+                <span class="badge badge-primary mb-4">Founder's Story</span>
+                <h2 class="font-display text-3xl font-bold text-primary mb-4 leading-tight">
+                  <a href="/pages/contact.html" class="hover:text-orange-500 transition-colors" target="_blank">
+                    Most days, I try to reach the office early.
+                  </a>
+                </h2>
+                <p class="text-secondary mb-6">
+                  Some days I succeed, some days I don’t but every day, I walk in with the same thought:
+                </p>
+                <div class="flex items-center space-x-4 text-sm text-secondary">
+                  <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Pawan Simha</span>
+                  <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>Sep 09, 2025</span>
+                  <span class="flex items-center"><i class="fas fa-clock mr-2"></i>1 min read</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Posts Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Post Item -->
+              <div class="blog-card fade-in stagger-1">
+                <a href="/pages/contact.html" target="_blank" class="block overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1740&auto=format&fit=crop"
+                    alt="People having a discussion around a table"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-secondary mb-3">Spark Studio Invite</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="/pages/contact.html" class="hover:text-orange-600 transition-colors" target="_blank">
+                      Great ideas don’t just happen in boardrooms they’re born in conversations.
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    At Spark Studio, we’ve always believed that growth begins when people come together to share ideas,
+                    dreams, and possibilities.
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Pawan Simha</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>Sep 08, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>1 min read</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional blog cards -->
+              <!-- Post 3 -->
+              <div class="blog-card fade-in stagger-2">
+                <a href="/pages/contact.html" target="_blank" class="block overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1620712943543-95fc69634367?q=80&w=1740&auto=format&fit=crop"
+                    alt="3D illustration of a cartoon bird character"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-primary mb-3">Case Studies</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="/pages/contact.html" class="hover:text-orange-500 transition-colors" target="_blank">
+                      Bringing Characters to Life One Frame at a Time.
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    Our latest 2D animation sample? A little bird with a lot of expression.
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Pawan Simha</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>Jul, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>1 min read</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Post 4 -->
+              <div class="blog-card fade-in stagger-3">
+                <a href="/pages/contact.html" target="_blank" class="block overflow-hidden rounded-t-2xl">
+                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1740&auto=format&fit=crop"
+                    alt="Team working on a project with sticky notes on a glass wall"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-secondary mb-3">Development</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="/pages/contact.html" class="hover:text-orange-600 transition-colors" target="_blank">
+                      Three Years In, and This Is the Hardest Reset Yet.
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    There are moments in business where silence is louder than action.
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Pawan Simha</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>June, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>1 min read</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Post 5 -->
+              <div class="blog-card fade-in stagger-4">
+                <a href="/pages/contact.html" target="_blank" class="block overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1509428333587-5ade42a27495?q=80&w=1887&auto=format&fit=crop"
+                    alt="A plant pot with a face drawn on it"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-primary mb-3">Spark Studio Project</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="/pages/contact.html" class="hover:text-orange-500 transition-colors" target="_blank">
+                      How do you make a plant pot talk without saying a word?
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    Through storytelling that moves literally.
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Pawan Simha</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>May, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>1 min read</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Post 6 -->
+              <div class="blog-card fade-in stagger-5">
+                <a href="/pages/contact.html" class="block overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1574717024633-6005c442d6a2?q=80&w=1740&auto=format&fit=crop"
+                    alt="A film crew shooting a scene on set"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-primary mb-3">Web Design</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="/pages/contact.html" class="hover:text-orange-500 transition-colors">
+                      Behind Every Frame A Force That Moves Together
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    Today, it wasn’t just a shoot. It was coordination, communication, clarity, and chaos all
+                    beautifully woven into one frame
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Pawan Simha</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>May, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>1 min read</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fake Blog 1 -->
+              <div class="blog-card fade-in stagger-6">
+                <a href="#" class="block overflow-hidden rounded-t-2xl">
+                  <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1740&auto=format&fit=crop"
+                    alt="A person pointing at a screen with charts"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-secondary mb-3">Marketing</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="#" class="hover:text-orange-600 transition-colors">
+                      The Art of Storytelling in Digital Marketing
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    Discover how compelling narratives can elevate your brand and connect with your audience on a deeper
+                    level.
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Jane Doe</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>Oct 01, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>4 min read</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fake Blog 2 -->
+              <div class="blog-card fade-in stagger-7">
+                <a href="#" class="block overflow-hidden rounded-t-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1611162617213-6d22e7f2c9b3?q=80&w=1740&auto=format&fit=crop"
+                    alt="Social media icons on a phone screen"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-primary mb-3">Social Media</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="#" class="hover:text-orange-500 transition-colors">
+                      5 Trends Shaping Social Media in 2025
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    Stay ahead of the curve with these key trends in video content, community building, and AI-driven
+                    engagement.
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>John Smith</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>Sep 25, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>5 min read</span>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card fade-in stagger-6">
+                <a href="#" class="block overflow-hidden rounded-t-2xl">
+                  <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1740&auto=format&fit=crop"
+                    alt="A person pointing at a screen with charts"
+                    class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+                </a>
+                <div class="p-6">
+                  <span class="badge badge-secondary mb-3">Marketing</span>
+                  <h3 class="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                    <a href="#" class="hover:text-orange-600 transition-colors">
+                      The Art of Storytelling in Digital Marketing
+                    </a>
+                  </h3>
+                  <p class="text-sm text-secondary mb-4">
+                    Discover how compelling narratives can elevate your brand and connect with your audience on a deeper
+                    level.
+                  </p>
+                  <div class="flex items-center space-x-4 text-sm text-secondary">
+                    <span class="flex items-center"><i class="fas fa-user-circle mr-2"></i>Jane Doe</span>
+                    <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i>Oct 01, 2025</span>
+                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i>4 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <!-- <nav class="flex justify-center items-center space-x-2 mt-12 fade-in" aria-label="Blog post pagination">
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-secondary hover:bg-gray-200 transition-colors pagination-link" aria-label="Previous page">
+                <i class="fas fa-arrow-left"></i>
+              </a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full font-semibold pagination-link active" aria-current="page" aria-label="Page 1">1</a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full font-semibold text-primary hover:bg-gray-200 transition-colors pagination-link" aria-label="Go to page 2">2</a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full font-semibold text-primary hover:bg-gray-200 transition-colors pagination-link" aria-label="Go to page 3">3</a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-secondary hover:bg-gray-200 transition-colors pagination-link" aria-label="Next page">
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </nav> -->
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="space-y-8 fade-in stagger-1">
+            <!-- Search -->
+            <!-- <div class="card p-6">
+              <h3 class="font-display text-xl font-bold text-primary mb-4">Search</h3>
+              <form>
+                <div class="flex">
+                  <input type="text"
+                         placeholder="Search articles..."
+                         class="w-full px-4 py-3 border border-color rounded-l-lg focus:outline-none focus:ring-2 focus:ring-orange-400 bg-surface text-primary">
+                  <button type="submit" class="px-6 py-3 gradient-primary text-white rounded-r-lg hover:opacity-90 transition-opacity">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div> -->
+
+            <!-- Categories -->
+            <!-- <div class="card p-6">
+              <h3 class="font-display text-xl font-bold text-primary mb-4">Categories</h3>
+              <ul class="space-y-2 text-secondary">
+                <li><a href="#" class="hover:text-orange-500 transition-colors">Design Tips (5)</a></li>
+                <li><a href="#" class="hover:text-orange-500 transition-colors">Development (3)</a></li>
+                <li><a href="#" class="hover:text-orange-500 transition-colors">Marketing (4)</a></li>
+                <li><a href="#" class="hover:text-orange-500 transition-colors">Industry News (2)</a></li>
+                <li><a href="#" class="hover:text-orange-500 transition-colors">Case Studies (1)</a></li>
+              </ul>
+            </div> -->
+
+            <!-- Newsletter -->
+            <div class="card p-6 gradient-primary text-white">
+              <h3 class="font-display text-xl font-bold mb-4">Join Our Newsletter</h3>
+              <p class="mb-4 text-sm opacity-90">Get the latest insights delivered straight to your inbox.</p>
+              <form>
+                <input type="email" placeholder="Your email address"
+                  class="w-full px-4 py-3 rounded-lg text-primary bg-white bg-opacity-90 mb-4 focus:outline-none focus:ring-2 focus:ring-white">
+                <button type="submit"
+                  class="w-full px-6 py-3 bg-white text-orange-500 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="../components/footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/pages.js"></script>
+</body>
+
+</html>

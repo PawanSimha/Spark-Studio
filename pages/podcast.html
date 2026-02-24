@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast | Spark Studio</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/logo's/Spark Studio.png">
+
+  <meta name="author" content="Pawan Simha" />
+  <!-- SEO & Social Meta -->
+  <meta name="description"
+    content="Listen to the Spark Studio podcast for expert insights on design and development." />
+  <meta property="og:title" content="Podcast | Spark Studio" />
+  <meta property="og:description"
+    content="Listen to the Spark Studio podcast for expert insights on design and development." />
+  <meta property="og:image" content="/assets/images/logo's/1.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome (latest only, removed duplicate) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Fonts (optimized with preconnect, kept Raleway + Montserrat only) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+</head>
+
+<body class="antialiased">
+  <div data-include="/components/header.html"></div>
+
+  <main>
+    <header class="min-h-[50vh] flex items-center justify-center relative overflow-hidden py-24">
+      <div class="floating-icons ">
+        <div class="floating-icon"><i class="fas fa-microphone-alt"></i></div>
+        <div class="floating-icon"><i class="fas fa-headphones"></i></div>
+        <div class="floating-icon"><i class="fas fa-podcast"></i></div>
+        <div class="floating-icon"><i class="fas fa-volume-up"></i></div>
+        <div class="floating-icon"><i class="fas fa-wave-square"></i></div>
+        <div class="floating-icon"><i class="fas fa-sliders-h"></i></div>
+        <div class="floating-icon"><i class="fas fa-broadcast-tower"></i></div>
+        <div class="floating-icon"><i class="fas fa-play-circle"></i></div>
+      </div>
+      <div class="container mx-auto px-4 text-center relative z-10 pt-16">
+        <div class="fade-in">
+          <h1 class="font-display text-4xl md:text-6xl font-bold mb-4">
+            The <span class="gradient-text">Podcast</span>
+          </h1>
+          <p class="text-lg md:text-xl text-secondary max-w-2xl mx-auto">
+            Tune in for deep dives into UI/UX, software development, and the business of design.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Video Podcast -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2 space-y-6">
+
+            <section aria-labelledby="featured-video-heading" class="fade-in">
+              <h2 id="featured-video-heading" class="sr-only">Featured Video Podcast</h2>
+              <article class="card p-4 sm:p-6 lg:p-8 bg-surface rounded-2xl shadow-lg">
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-primary mb-4">Featured Video Podcast 🎥</h3>
+                <div class="relative pt-[56.25%] mb-4">
+                  <iframe loading="lazy" class="absolute top-0 left-0 w-full h-full rounded-xl overflow-hidden"
+                    src="https://www.youtube.com/embed/oiyjCSemDa4?si=eTGLam8kuOWKWHgp"
+                    title="Spark Studio Podcast Featured Episode" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="space-y-2">
+                  <h4 class="font-display text-lg font-bold text-primary">Video Title Here</h4>
+                  <p class="text-secondary text-sm line-clamp-2">
+                    Brief description of the video content.
+                  </p>
+                </div>
+                <a href="https://youtube.com/@sparkstudio?si=4Ty-Vr_AH8XODSj3" target="_blank"
+                  class="mt-4 inline-block w-full px-6 py-3 bg-red-600 text-white rounded-full font-semibold text-sm hover:bg-red-700 transition-colors text-center">
+                  Watch More on YouTube
+                </a>
+              </article>
+            </section>
+
+            <!-- Episodes -->
+            <section aria-labelledby="episodes-heading" class="space-y-6 fade-in">
+              <h2 id="episodes-heading" class="sr-only">Latest Episodes</h2>
+              <div class="space-y-6">
+                <article
+                  class="podcast-episode-row flex items-center justify-between p-6 bg-surface rounded-2xl shadow-lg transition-transform hover:scale-[1.02]">
+                  <div class="flex items-center space-x-4">
+                    <button
+                      class="play-pause-btn w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors"
+                      aria-label="Play Episode">
+                      <i class="fas fa-play"></i>
+                    </button>
+                    <img loading="lazy" src="https://placehold.co/100x100/FF6F00/FFFFFF?text=E1" alt="Episode thumbnail"
+                      class="w-20 h-20 flex-shrink-0 object-cover rounded-lg hidden sm:block" />
+                    <div>
+                      <h3 class="font-display text-lg font-bold text-primary leading-tight">
+                        The Psychology of Color in UI Design
+                      </h3>
+                      <p class="text-sm text-secondary line-clamp-2">
+                        Understanding how color affects user emotions and conversions.
+                      </p>
+                      <div class="flex items-center space-x-4 text-xs text-secondary mt-2">
+                        <span><i class="fas fa-calendar-alt mr-1"></i>Oct 28, 2024</span>
+                        <span><i class="fas fa-microphone-alt mr-1"></i>25 min</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-shrink-0 flex space-x-4">
+                    <a href="path/to/episode-1.mp3" download
+                      class="download-btn w-10 h-10 flex items-center justify-center rounded-full text-secondary hover:text-orange-500 transition-colors"
+                      aria-label="Download Episode">
+                      <i class="fas fa-download text-lg"></i>
+                    </a>
+                    <audio class="hidden" src="path/to/episode-1.mp3"></audio>
+                  </div>
+                </article>
+                <!-- Add more real episodes here -->
+              </div>
+            </section>
+
+            <!-- Pagination -->
+            <nav class="flex justify-center items-center space-x-2 mt-12 fade-in" aria-label="Pagination">
+              <a href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full text-secondary hover:bg-gray-200 transition-colors pagination-link"
+                aria-label="Previous Page">
+                <i class="fas fa-arrow-left"></i>
+              </a>
+              <a href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full font-semibold pagination-link active"
+                aria-current="page">1</a>
+              <a href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full font-semibold text-primary hover:bg-gray-200 transition-colors pagination-link">2</a>
+              <a href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full font-semibold text-primary hover:bg-gray-200 transition-colors pagination-link">3</a>
+              <a href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full text-secondary hover:bg-gray-200 transition-colors pagination-link"
+                aria-label="Next Page">
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </nav>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="space-y-8 fade-in stagger-1">
+            <section aria-labelledby="promo-heading">
+              <h2 id="promo-heading" class="sr-only">Follow Us</h2>
+              <a href="https://youtube.com/@sparkstudio?si=4Ty-Vr_AH8XODSj3" target="_blank" rel="noopener noreferrer"
+                class="relative overflow-hidden transition-all duration-300 transform hover:scale-[1.02] cursor-pointer block text-center card p-8 bg-surface rounded-2xl shadow-lg">
+                <div class="mb-4">
+                  <i class="fab fa-youtube text-red-600 text-6xl opacity-80"></i>
+                </div>
+                <div class="mb-6">
+                  <h3 class="font-display text-2xl font-bold text-primary mb-1">
+                    Join Us on YouTube
+                  </h3>
+                  <p class="text-secondary text-sm">
+                    Exclusive tutorials, interviews, case studies, and more.
+                  </p>
+                </div>
+                <span
+                  class="inline-block w-full px-6 py-3 bg-red-600 rounded-full font-semibold text-sm hover:bg-red-700 text-white">
+                  Subscribe
+                </span>
+              </a>
+              <a href="https://open.spotify.com/user/31ev3adtzsueqw7xo4wdwqvti5ka" target="_blank"
+                rel="noopener noreferrer"
+                class="relative overflow-hidden transition-all duration-300 transform hover:scale-[1.02] cursor-pointer block text-center card p-8 bg-surface rounded-2xl shadow-lg mt-6">
+                <div>
+                  <i class="fab fa-spotify text-orange-600 text-6xl opacity-80"></i>
+                </div>
+                <div class="mb-6">
+                  <h3 class="font-display text-2xl font-bold text-primary mb-1">
+                    Stream Podcast on Spotify
+                  </h3>
+                  <p class="text-secondary text-sm">
+                    Follow our channel for new episodes every week.
+                  </p>
+                </div>
+                <span
+                  class="inline-block w-full px-6 py-3 bg-orange-600 rounded-full font-semibold text-sm hover:bg-orange-700 text-white">
+                  Follow
+                </span>
+              </a>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="../components/footer.html"></div>
+
+  <!-- JS -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/pages.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".podcast-episode-row").forEach((episode) => {
+        const playButton = episode.querySelector(".play-pause-btn");
+        const audioPlayer = episode.querySelector("audio");
+
+        playButton.addEventListener("click", () => {
+          if (audioPlayer.paused) {
+            document.querySelectorAll(".podcast-episode-row audio").forEach((otherAudio) => {
+              if (otherAudio !== audioPlayer) {
+                otherAudio.pause();
+                const otherPlayButton = otherAudio.closest(".podcast-episode-row").querySelector(".play-pause-btn i");
+                otherPlayButton.classList.remove("fa-pause");
+                otherPlayButton.classList.add("fa-play");
+              }
+            });
+            audioPlayer.play();
+            const icon = playButton.querySelector("i");
+            icon.classList.remove("fa-play");
+            icon.classList.add("fa-pause");
+          } else {
+            audioPlayer.pause();
+            const icon = playButton.querySelector("i");
+            icon.classList.remove("fa-pause");
+            icon.classList.add("fa-play");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

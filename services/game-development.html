@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development | Spark Studio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo's/Spark Studio.png">
+    <meta name="description"
+        content="Turn your game concept into a playable reality with our expert development services. We handle everything from design and programming to art and final release.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+</head>
+
+<body class="antialiased">
+    <div data-include="../components/header.html"></div>
+
+    <div class="fixed top-24 left-6 z-50">
+        <a href="../pages/services.html"
+            class="group bg-white/80 hover:bg-orange-500 border border-slate-200 hover:border-orange-500 text-primary hover:text-white px-4 py-2 rounded-lg transition-all duration-300 flex items-center gap-2 shadow-lg backdrop-blur-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+                </path>
+            </svg>
+            <span class="text-sm font-medium">All Services</span>
+        </a>
+    </div>
+
+    <main>
+        <section class="min-h-[50vh] flex items-center justify-center relative overflow-hidden bg-light py-24">
+            <div class="floating-icons">
+                <div class="floating-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="floating-icon"><i class="fas fa-dice"></i></div>
+                <div class="floating-icon"><i class="fas fa-code"></i></div>
+                <div class="floating-icon"><i class="fas fa-palette"></i></div>
+                <div class="floating-icon"><i class="fas fa-brain"></i></div>
+                <div class="floating-icon"><i class="fas fa-robot"></i></div>
+                <div class="floating-icon"><i class="fas fa-rocket"></i></div>
+                <div class="floating-icon"><i class="fas fa-headset"></i></div>
+                <div class="floating-icon"><i class="fas fa-mobile-alt"></i></div>
+            </div>
+            <div class="container mx-auto px-4 text-center relative z-10 pt-16">
+                <div class="fade-in">
+                    <h1 class="font-display text-4xl md:text-6xl font-bold text-primary mb-4">
+                        Game <span class="gradient-text">Development</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-secondary max-w-2xl mx-auto">
+                        Turn your creative vision into a playable reality, blending art, technology, and design to build
+                        an unforgettable experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dev-meaning" class="py-24 bg-surface">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-in">
+                        <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary mb-6">
+                            What is<br><span class="gradient-text">Game Development?</span>
+                        </h2>
+                        <p class="text-xl text-secondary mb-8 leading-relaxed">
+                            Game development is a multi-disciplinary process that involves transforming an initial
+                            concept into a finished video game. It's a powerful combination of creative design,
+                            technical programming, digital art, and meticulous testing. A successful game requires not
+                            only a great idea, but also the polished execution to deliver a smooth and engaging
+                            experience for players.
+                        </p>
+                        <a href="contact.html" class="btn btn-primary">Start Your Game Project</a>
+                    </div>
+                    <div class="fade-in stagger-1">
+                        <img src="https://images.unsplash.com/photo-1580327344181-c1163234e5a0?q=80&w=1740&auto=format&fit=crop"
+                            alt="A game designer working on a level layout and map in a game engine"
+                            class="w-full h-auto rounded-2xl shadow-large">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-services" class="py-24 bg-light">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary mb-6">
+                        Our Development <span class="gradient-text">Process</span>
+                    </h2>
+                    <div class="w-20 h-1 gradient-primary mx-auto rounded-full mb-8"></div>
+                    <p class="text-xl text-secondary max-w-3xl mx-auto">
+                        We follow a structured and collaborative process to ensure every aspect of your game is designed
+                        and built to perfection.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card p-8 fade-in stagger-1">
+                        <div
+                            class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-primary mb-4">Concept & Prototyping</h3>
+                        <p class="text-secondary">We'll help you refine your game idea, create a detailed design
+                            document, and build an initial prototype to test core mechanics and gameplay loops.</p>
+                    </div>
+                    <div class="card p-8 fade-in stagger-2">
+                        <div
+                            class="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-primary mb-4">2D & 3D Art</h3>
+                        <p class="text-secondary">Our artists will create all the visual assets, from character models
+                            and environments to textures, animations, and in-game particle effects.</p>
+                    </div>
+                    <div class="card p-8 fade-in stagger-3">
+                        <div
+                            class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-primary mb-4">Programming & Engineering</h3>
+                        <p class="text-secondary">Our engineers will write the clean, efficient code that powers your
+                            game's mechanics, physics, AI, and all interactive systems.</p>
+                    </div>
+                    <div class="card p-8 fade-in stagger-4">
+                        <div
+                            class="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-primary mb-4">UI/UX & Level Design</h3>
+                        <p class="text-secondary">We design the user interface and intuitive game flows, as well as
+                            build the maps and levels that guide players through the core experience.</p>
+                    </div>
+                    <div class="card p-8 fade-in stagger-5">
+                        <div
+                            class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-primary mb-4">Quality Assurance & Testing</h3>
+                        <p class="text-secondary">Before launch, we conduct extensive testing to identify and fix bugs,
+                            ensuring a stable, polished, and bug-free experience for your players.</p>
+                    </div>
+                    <div class="card p-8 fade-in stagger-6">
+                        <div
+                            class="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-primary mb-4">Multiplayer & Live Ops</h3>
+                        <p class="text-secondary">We can build the backend infrastructure for multiplayer games and
+                            provide live operations support, including updates and community management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="client-list" class="py-24 bg-surface">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary mb-6">
+                        Creating Games <span class="gradient-text">For</span>
+                    </h2>
+                    <div class="w-20 h-1 gradient-primary mx-auto rounded-full mb-8"></div>
+                    <p class="text-xl text-secondary max-w-3xl mx-auto">
+                        We develop for a variety of platforms, genres, and purposes, bringing your game to the players
+                        who will love it.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="stat-card text-center fade-in stagger-1 p-6">
+                        <i class="fas fa-mobile-alt text-4xl gradient-text mb-4"></i>
+                        <h4 class="font-display text-xl font-bold text-primary">Mobile</h4>
+                        <p class="text-sm text-secondary mt-1">iOS & Android</p>
+                    </div>
+                    <div class="stat-card text-center fade-in stagger-2 p-6">
+                        <i class="fas fa-desktop text-4xl gradient-text mb-4"></i>
+                        <h4 class="font-display text-xl font-bold text-primary">PC</h4>
+                        <p class="text-sm text-secondary mt-1">Steam & Epic Games</p>
+                    </div>
+                    <div class="stat-card text-center fade-in stagger-3 p-6">
+                        <i class="fas fa-gamepad text-4xl gradient-text mb-4"></i>
+                        <h4 class="font-display text-xl font-bold text-primary">Console</h4>
+                        <p class="text-sm text-secondary mt-1">PlayStation & Xbox</p>
+                    </div>
+                    <div class="stat-card text-center fade-in stagger-4 p-6">
+                        <i class="fas fa-globe text-4xl gradient-text mb-4"></i>
+                        <h4 class="font-display text-xl font-bold text-primary">Web & Browser</h4>
+                        <p class="text-sm text-secondary mt-1">HTML5 & WebGL</p>
+                    </div>
+                    <div class="stat-card text-center fade-in stagger-5 p-6">
+                        <i class="fas fa-graduation-cap text-4xl gradient-text mb-4"></i>
+                        <h4 class="font-display text-xl font-bold text-primary">Serious Games</h4>
+                        <p class="text-sm text-secondary mt-1">Education & Training</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="py-24 bg-light">
+            <div class="container mx-auto px-4 text-center">
+                <div class="fade-in rounded-3xl bg-surface p-10 sm:p-12 shadow-lg">
+                    <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary mb-6">
+                        Ready to <span class="gradient-text">Launch Your Hit Game?</span>
+                    </h2>
+                    <p class="text-xl text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
+                        The gaming market is booming, but a successful launch requires a professional team that can
+                        handle the technical and creative complexities. Let's build a game that captivates players and
+                        stands out from the crowd.
+                    </p>
+                    <a href="../pages/contact.html" class="btn btn-primary px-8 py-4 text-lg">Schedule Your Free
+                        Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="../components/footer.html"></div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/pages.js"></script>
+</body>
+
+</html>

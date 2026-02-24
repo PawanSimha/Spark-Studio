@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies & Legal | Spark Studio</title>
+    <meta name="description"
+        content="Official policies and legal framework for Spark Studio, covering privacy, terms of service, cookies, and regulatory compliance.">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo's/Spark Studio.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#ff7a00',
+                        'dark': '#000000',
+                        'surface': '#1c1c1e',
+                        'surface-active': '#2c2c2e'
+                    },
+                    backgroundImage: {
+                        'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --color-primary: #ff7a00;
+            --color-dark: #000000;
+        }
+
+        body {
+            background-color: var(--color-dark);
+            color: #f5f5f7;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(28, 28, 30, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-link.active {
+            color: var(--color-primary);
+            background: rgba(255, 122, 0, 0.1);
+            border-left: 3px solid var(--color-primary);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2c2c2e;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3c3c3e;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased font-sans">
+    <!-- Back Button -->
+    <div class="fixed top-8 left-8 z-50">
+        <a href="/"
+            class="flex items-center gap-2 px-4 py-2 bg-surface/80 hover:bg-primary/20 border border-white/10 rounded-full transition-all duration-300 group">
+            <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <span class="text-sm font-medium">Back to Home</span>
+        </a>
+    </div>
+
+    <div class="flex flex-col lg:flex-row min-h-screen pt-24 lg:pt-0">
+        <!-- Sidebar Navigation -->
+        <aside
+            class="w-full lg:w-80 lg:h-screen lg:fixed glass-card border-b lg:border-r lg:border-b-0 border-white/10 z-40 p-8 pt-24 flex flex-col gap-8">
+            <div>
+                <h1
+                    class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60 mb-2">
+                    Legal Center</h1>
+                <p class="text-white/40 text-sm">Policies & Global Compliance</p>
+            </div>
+
+            <nav class="flex flex-col gap-2">
+                <button onclick="showSection('privacy')"
+                    class="sidebar-link active flex items-center gap-3 p-3 rounded-lg text-sm font-medium text-white/70 hover:text-white hover:bg-white/5 transition-all text-left">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    Privacy Policy
+                </button>
+                <button onclick="showSection('terms')"
+                    class="sidebar-link flex items-center gap-3 p-3 rounded-lg text-sm font-medium text-white/70 hover:text-white hover:bg-white/5 transition-all text-left">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Terms & Conditions
+                </button>
+                <button onclick="showSection('cookies')"
+                    class="sidebar-link flex items-center gap-3 p-3 rounded-lg text-sm font-medium text-white/70 hover:text-white hover:bg-white/5 transition-all text-left">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 10.5h.01m-4.01-4h.01M9 13.5h.01M16 16.5h.01M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                    </svg>
+                    Cookie Policy
+                </button>
+                <button onclick="showSection('accessibility')"
+                    class="sidebar-link flex items-center gap-3 p-3 rounded-lg text-sm font-medium text-white/70 hover:text-white hover:bg-white/5 transition-all text-left">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    Accessibility
+                </button>
+                <button onclick="showSection('contact')"
+                    class="sidebar-link flex items-center gap-3 p-3 rounded-lg text-sm font-medium text-white/70 hover:text-white hover:bg-white/5 transition-all text-left">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13h10a2 2 0 002-2V7a2 2 0 00-2-2H2a2 2 0 00-2 2v10a2 2 0 002 2h10z" />
+                    </svg>
+                    Legal Contact
+                </button>
+            </nav>
+
+            <div class="mt-auto p-4 bg-primary/5 rounded-2xl border border-primary/10">
+                <p class="text-xs text-white/40 mb-1">Last Updated</p>
+                <p class="text-sm font-medium text-primary">September 12, 2026</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="lg:ml-80 flex-1 p-8 lg:p-20">
+            <div class="max-w-4xl mx-auto">
+
+                <!-- Privacy Section -->
+                <section id="content-privacy" class="content-section active">
+                    <header class="mb-12">
+                        <div
+                            class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-4">
+                            DPDP ACT COMPLIANT</div>
+                        <h2 class="text-4xl font-bold mb-4">Privacy Policy</h2>
+                        <p class="text-white/60 leading-relaxed text-lg">Spark Studio respects your privacy and is
+                            committed to protecting your personal data in accordance with India's Digital Personal Data
+                            Protection Act 2023.</p>
+                    </header>
+
+                    <div class="space-y-12 text-white/80 leading-relaxed">
+                        <div class="glass-card p-8 rounded-3xl">
+                            <h3 class="text-xl font-bold text-white mb-6">1. Data Fiduciary Information</h3>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <h4 class="text-sm font-bold text-white/40 uppercase mb-2">Registered Entity</h4>
+                                    <p class="text-white mb-4 italic">Spark Studio</p>
+                                    <h4 class="text-sm font-bold text-white/40 uppercase mb-2">Address</h4>
+                                    <p class="text-sm">Akshaya Tower, 5th Cross Rd, RT Nagar, Bengaluru 560032, India
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white/40 uppercase mb-2">Support Email</h4>
+                                    <p class="text-primary font-medium mb-4">pawansimha.pc@gmail.com</p>
+                                    <h4 class="text-sm font-bold text-white/40 uppercase mb-2">Grievance Officer</h4>
+                                    <p class="text-sm">Pawan Simha</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-6">2. Data Processing & Legal Basis</h3>
+                            <div class="space-y-6">
+                                <p>We process personal data only when we have a lawful basis. This includes:</p>
+                                <ul class="list-disc pl-5 space-y-3">
+                                    <li><strong class="text-white">Contractual Necessity:</strong> To deliver creative
+                                        services and maintain client accounts.</li>
+                                    <li><strong class="text-white">Consent:</strong> For marketing communications and
+                                        portfolio features.</li>
+                                    <li><strong class="text-white">Legal Obligations:</strong> Compliance with tax and
+                                        regulatory requirements in India.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-6">3. Your Rights</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                                    <h4 class="text-white font-bold mb-2">Right to Access</h4>
+                                    <p class="text-sm text-white/60">Request a summary of the personal data we process
+                                        about you.</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                                    <h4 class="text-white font-bold mb-2">Right to Correction</h4>
+                                    <p class="text-sm text-white/60">Update incomplete or inaccurate information.</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                                    <h4 class="text-white font-bold mb-2">Right to Withdrawal</h4>
+                                    <p class="text-sm text-white/60">Withdraw consent for non-essential processing at
+                                        any time.</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                                    <h4 class="text-white font-bold mb-2">Right to Complaint</h4>
+                                    <p class="text-sm text-white/60">Raise issues with our grievance officer or the Data
+                                        Protection Board.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Terms Section -->
+                <section id="content-terms" class="content-section">
+                    <header class="mb-12">
+                        <div
+                            class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-4">
+                            LEGAL FRAMEWORK</div>
+                        <h2 class="text-4xl font-bold mb-4">Terms & Conditions</h2>
+                        <p class="text-white/60 leading-relaxed text-lg">These terms govern all services provided by
+                            Spark Studio. By engaging our services, you agree to these legal conditions under Indian
+                            jurisdiction.</p>
+                    </header>
+
+                    <div class="space-y-12 text-white/80 leading-relaxed">
+                        <div class="border-l-2 border-primary pl-8">
+                            <h3 class="text-2xl font-bold text-white mb-6">1. Service Engagement</h3>
+                            <p class="mb-4">All projects begin with a formal proposal or brief. Work commences upon
+                                either electronic acceptance or receipt of the initial deposit.</p>
+                            <p>Spark Studio reserves the right to refuse service for content that is unlawful,
+                                defamatory, or violates our ethical standards.</p>
+                        </div>
+
+                        <div class="border-l-2 border-primary pl-8">
+                            <h3 class="text-2xl font-bold text-white mb-6">2. Intellectual Property</h3>
+                            <p class="mb-4">Final ownership of deliverables is transferred to the Client upon full
+                                payment of all outstanding invoices. This includes:</p>
+                            <ul class="list-disc pl-5 space-y-2 mb-4">
+                                <li>Final high-resolution graphics/videos</li>
+                                <li>Registered brand assets</li>
+                                <li>Project-specific code or implementations</li>
+                            </ul>
+                            <p class="text-sm opacity-60 italic">Spark Studio retains the right to use non-confidential
+                                project milestones in our professional portfolio.</p>
+                        </div>
+
+                        <div class="border-l-2 border-primary pl-8">
+                            <h3 class="text-2xl font-bold text-white mb-6">3. Payment & Cancellations</h3>
+                            <p class="mb-4">Our standard billing is 50% advance and 50% upon final delivery.
+                                Milestone-based payments are available for long-term engagements.</p>
+                            <div class="p-4 bg-red-500/10 border border-red-500/20 rounded-xl text-sm">
+                                <strong class="text-red-400">Late Payment Fee:</strong> Overdue invoices incur a 2%
+                                monthly late fee after the 15-day grace period.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cookies Section -->
+                <section id="content-cookies" class="content-section">
+                    <header class="mb-12">
+                        <div
+                            class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-4">
+                            USER EXPERIENCE</div>
+                        <h2 class="text-4xl font-bold mb-4">Cookie Policy</h2>
+                        <p class="text-white/60 leading-relaxed text-lg">Transparent management of digital identifiers
+                            and tracking technologies.</p>
+                    </header>
+
+                    <div class="space-y-8">
+                        <div class="p-8 glass-card rounded-3xl">
+                            <h3 class="text-xl font-bold text-white mb-4">What we use cookies for</h3>
+                            <div class="grid gap-4">
+                                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
+                                    <div class="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                                    <div>
+                                        <h4 class="font-bold text-white mb-1 italic">Essential Cookies</h4>
+                                        <p class="text-sm text-white/50 leading-relaxed">Required for core site security
+                                            and navigation. Cannot be disabled.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
+                                    <div class="w-2 h-2 bg-white/20 rounded-full mt-2"></div>
+                                    <div>
+                                        <h4 class="font-bold text-white mb-1 italic">Performance Tracking</h4>
+                                        <p class="text-sm text-white/50 leading-relaxed">Anonymous usage patterns via
+                                            Google Analytics to help us improve the site.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-8 border border-white/10 rounded-3xl">
+                            <h3 class="text-xl font-bold text-white mb-4">Managing Your Preferences</h3>
+                            <p class="text-white/60 mb-6 leading-relaxed">You can modify your cookie settings through
+                                your browser preferences at any time. For specific data removal requests related to
+                                cookie identifiers, please email us directly.</p>
+                            <button
+                                class="bg-primary text-black font-bold px-8 py-3 rounded-full hover:bg-white transition-colors duration-300">Reset
+                                Preferences</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Accessibility Section -->
+                <section id="content-accessibility" class="content-section">
+                    <header class="mb-12">
+                        <div
+                            class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-4">
+                            INCLUSIVE DESIGN</div>
+                        <h2 class="text-4xl font-bold mb-4">Accessibility</h2>
+                        <p class="text-white/60 leading-relaxed text-lg">Ensuring our digital experiences are usable by
+                            everyone.</p>
+                    </header>
+
+                    <div class="space-y-8 text-white/80 leading-relaxed">
+                        <p>Spark Studio is committed to achieving WCAG 2.1 Level AA compliance. We actively work to
+                            ensure our animations, colors, and layouts do not pose barriers to people with disabilities.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-4">Visual Standards</h3>
+                                <ul class="space-y-3 text-sm">
+                                    <li>• High-contrast text configurations</li>
+                                    <li>• Motion-sensitive animation controls</li>
+                                    <li>• Screen-reader friendly semantic code</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-4">Technical Standards</h3>
+                                <ul class="space-y-3 text-sm">
+                                    <li>• Keyboard-only navigation support</li>
+                                    <li>• Aria-labels and descriptive landmarks</li>
+                                    <li>• Responsive layouts for zoom support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Legal Contact -->
+                <section id="content-contact" class="content-section">
+                    <header class="mb-12">
+                        <h2 class="text-4xl font-bold mb-4">Contact Legal</h2>
+                    </header>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="glass-card p-10 rounded-3xl">
+                            <h3 class="text-xl font-bold text-white mb-4">Direct Inquiry</h3>
+                            <p class="text-white/60 mb-8">For all privacy, legal, or regulatory inquiries, our team is
+                                ready to assist within 48 business hours.</p>
+                            <a href="mailto:pawansimha.pc@gmail.com"
+                                class="text-primary text-xl font-bold underline underline-offset-8 decoration-primary/30 hover:decoration-primary transition-all">pawansimha.pc@gmail.com</a>
+                        </div>
+                        <div class="p-10 border border-white/10 rounded-3xl flex flex-col justify-center">
+                            <h3 class="text-white/40 text-sm font-bold uppercase mb-4 tracking-widest">Global HQ</h3>
+                            <p class="text-xl font-medium leading-relaxed">Akshaya Tower, RT Nagar,<br>Bengaluru
+                                560032,<br>Karnataka, India</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function showSection(sectionId) {
+            // Update sidebar links
+            document.querySelectorAll('.sidebar-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+
+            // Update content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('content-' + sectionId).classList.add('active');
+
+            // Scroll to top of content on mobile
+            if (window.innerWidth < 1024) {
+                document.getElementById('content-' + sectionId).scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer - Spark Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <style>
+    .glass-footer {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+    }
+
+    .cta-gradient {
+      background: linear-gradient(180deg, #1d1d1f 0%, #000000 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-[#f5f5f7] antialiased">
+
+  <!-- Main Footer Container -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+
+    <!-- CTA Section: Ready to transform? -->
+    <section class="mb-12">
+      <div class="cta-gradient rounded-[40px] p-12 md:p-20 text-center relative overflow-hidden group">
+        <!-- Subtle Glow effect -->
+        <div
+          class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+        </div>
+
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+          Ready to transform your brand?
+        </h2>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+          Join hundreds of forward-thinking businesses who are building
+          premium digital experiences with Spark Studio.
+        </p>
+        <div class="flex justify-center">
+          <a href="/pages/contact.html"
+            class="bg-white text-black px-10 py-4 rounded-full font-semibold text-lg hover:bg-gray-200 transition-all transform hover:scale-105 active:scale-95">
+            Start for free
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Glassmorphic Footer -->
+    <footer class="glass-footer rounded-[40px] p-10 md:p-16 shadow-2xl">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+
+        <!-- Brand Info (Col 1-4) -->
+        <div class="lg:col-span-4 space-y-8">
+          <div class="flex items-center">
+            <img src="/assets/images/logo's/Spark Studio - Header- Footer.png" alt="Spark Studio"
+              class="h-10 w-auto object-contain opacity-90 transition-opacity hover:opacity-100" />
+          </div>
+          <p class="text-secondary text-[0.95rem] leading-relaxed max-w-sm">
+            Spark Studio empowers businesses to transform vision into clear, compelling
+            digital experiences, making impact easier to build, understand, and act on.
+          </p>
+          <!-- Social Links -->
+          <div class="flex space-x-6 text-xl text-primary">
+            <a href="https://twitter.com/iampawansimha" target="_blank"
+              class="hover:text-primary-dark transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/pawansimha" target="_blank"
+              class="hover:text-primary-dark transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/PawanSimha" target="_blank" class="hover:text-primary-dark transition-colors"><i
+                class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Links (Col 5-12) -->
+        <div class="lg:col-span-8">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Product/Services -->
+            <div class="space-y-4">
+              <h3 class="font-bold text-primary text-sm tracking-tight uppercase">Services</h3>
+              <ul class="space-y-3 text-secondary text-[0.9rem]">
+                <li><a href="/pages/services.html" class="hover:text-[#ff7a00] transition-colors">Branding</a></li>
+                <li><a href="/services/web-development.html"
+                    class="hover:text-[#ff7a00] transition-colors">Development</a></li>
+                <li><a href="/services/digital-marketing.html"
+                    class="hover:text-[#ff7a00] transition-colors">Marketing</a></li>
+                <li><a href="/services/game-development.html" class="hover:text-[#ff7a00] transition-colors">Gaming</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Resources -->
+            <div class="space-y-4">
+              <h3 class="font-bold text-primary text-sm tracking-tight uppercase">Resources</h3>
+              <ul class="space-y-3 text-secondary text-[0.9rem]">
+                <li><a href="/pages/blog.html" class="hover:text-[#ff7a00] transition-colors">Insights</a></li>
+                <li><a href="/pages/methodology.html" class="hover:text-[#ff7a00] font-medium transition-colors">Success
+                    Framework</a></li>
+                <li><a href="/pages/pricing.html" class="hover:text-[#ff7a00] transition-colors">Pricing</a></li>
+                <li><a href="/pages/contact.html" class="hover:text-[#ff7a00] transition-colors">Support</a></li>
+              </ul>
+            </div>
+            <!-- Company -->
+            <div class="space-y-4">
+              <h3 class="font-bold text-primary text-sm tracking-tight uppercase">Company</h3>
+              <ul class="space-y-3 text-secondary text-[0.9rem]">
+                <li><a href="/pages/about.html" class="hover:text-[#ff7a00] transition-colors">About</a></li>
+                <li><a href="/pages/careers.html" class="hover:text-[#ff7a00] transition-colors">Careers</a></li>
+                <li><a href="/pages/contact.html" class="hover:text-[#ff7a00] transition-colors">Contact</a></li>
+                <li><a href="/pages/T&C.html" class="hover:text-[#ff7a00] transition-colors">Partners</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div
+        class="mt-16 pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center text-[0.8rem] text-secondary space-y-4 md:space-y-0">
+        <div>
+          © 2026 Spark Studio. All rights reserved.
+        </div>
+        <div class="flex space-x-6">
+          <a href="/pages/T&C.html" class="hover:underline">Privacy Policy</a>
+          <a href="/pages/T&C.html" class="hover:underline">Terms of Service</a>
+          <a href="/pages/T&C.html" class="hover:underline">Cookie Settings</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

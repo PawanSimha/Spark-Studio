@@ -1,0 +1,59 @@
+<header class="header">
+    <div class="container mx-auto px-6 py-[10px]">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="/index.html" class="flex items-center">
+                    <img src="/assets/images/logo's/Spark Studio - Header- Footer.png" alt="Spark Studio Logo"
+                        class="h-10">
+                </a>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+                    rel="stylesheet">
+                <link href="/assets/css/main.css" rel="stylesheet">
+                <link href="/assets/css/components.css" rel="stylesheet">
+                <link href="/assets/css/pages.css" rel="stylesheet">
+            </div>
+
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/pages/about.html" class="nav-link">About</a>
+                <a href="/pages/services.html" class="nav-link">Services</a>
+                <a href="/pages/blog.html" class="nav-link">Blog</a>
+                <a href="/pages/pricing.html" class="nav-link">Pricing</a>
+                <a href="/pages/methodology.html" class="nav-link font-semibold text-orange-600">Methodology</a>
+                <a href="/pages/contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-orange-500/10 transition-colors"
+                    aria-label="Toggle Theme">
+                    <i id="theme-icon" class="fas fa-moon text-lg text-primary"></i>
+                </button>
+                <button id="mobile-menu-btn" class="lg:hidden text-dark p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden bg-light border-t border-border hidden transition-all duration-300">
+        <div class="px-6 py-6 space-y-4">
+            <a href="/index.html" class="mobile-nav-link">Home</a>
+            <a href="/pages/about.html" class="mobile-nav-link">About</a>
+            <a href="/pages/services.html" class="mobile-nav-link">Services</a>
+            <a href="/pages/blog.html" class="mobile-nav-link">Blog</a>
+            <a href="/pages/pricing.html" class="mobile-nav-link">Pricing</a>
+            <a href="/pages/methodology.html" class="mobile-nav-link">Methodology</a>
+            <a href="/pages/contact.html" class="mobile-nav-link">Contact</a>
+
+            <div class="pt-4 border-t border-border">
+                <button id="mobile-theme-toggle"
+                    class="flex items-center space-x-3 w-full p-3 rounded-xl hover:bg-orange-500/10 transition-colors text-primary font-medium">
+                    <i id="mobile-theme-icon" class="fas fa-moon text-lg"></i>
+                    <span>Switch Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
