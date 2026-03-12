@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/logo's/Spark Studio.png" width="150" alt="Spark Studio Logo" style="border-radius: 50%;">
+  <img src="assets/images/logos/spark-studio.png" width="150" alt="Spark Studio Logo" style="border-radius: 50%;">
 </p>
 
 <h1 align="center">Spark Studio</h1>

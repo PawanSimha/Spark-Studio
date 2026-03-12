@@ -147,3 +147,18 @@ function initializeHeaderLogic() {
     });
 }
 
+// --- Initialize Lenis Smooth Scroll ---
+(function() {
+    const lenisScript = document.createElement('script');
+    lenisScript.src = 'https://unpkg.com/lenis@1.1.20/dist/lenis.min.js';
+    lenisScript.onload = () => {
+        const lenis = new Lenis({
+            autoRaf: true,
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            touchMultiplier: 2
+        });
+    };
+    document.head.appendChild(lenisScript);
+})();
+
