@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 return resp.text();
             })
             .then(html => {
-                el.innerHTML = html;
+                const rootPrefix = filePath.startsWith('../') ? '../' : './';
+                const processedHtml = html.replace(/\{\{ROOT\}\}\//g, rootPrefix);
+                el.innerHTML = processedHtml;
                 if (el.getAttribute("data-include").includes("header.html")) {
                     initializeHeaderLogic();
                 }
