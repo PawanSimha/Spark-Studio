@@ -111,6 +111,7 @@ h6 {
   max-width: 1200px;
   z-index: 1000;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, backdrop-filter, border-color, box-shadow, top, width, transform;
   background: var(--nav-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -124,6 +125,16 @@ h6 {
   width: 98%;
   background: var(--nav-bg-scrolled);
   border-color: rgba(255, 122, 0, 0.2);
+}
+
+.header.menu-open {
+  border-radius: 24px;
+}
+
+@media (min-width: 1024px) {
+  .header.menu-open {
+    border-radius: 980px;
+  }
 }
 
 .nav-link {

@@ -91,6 +91,10 @@ function initializeHeaderLogic() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
+        const header = document.querySelector('.header');
+        if (header) {
+            header.classList.toggle('menu-open');
+        }
         const icon = mobileMenuBtn.querySelector('i');
         if (mobileMenu.classList.contains('hidden')) {
             icon.className = 'fas fa-bars text-lg';
@@ -118,6 +122,10 @@ function initializeHeaderLogic() {
                 }
                 if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
+                    const header = document.querySelector('.header');
+                    if (header) {
+                        header.classList.remove('menu-open');
+                    }
                     mobileMenuBtn.querySelector('i').className = 'fas fa-bars text-lg';
                 }
             }
@@ -155,11 +163,18 @@ function initializeHeaderLogic() {
     lenisScript.src = 'https://unpkg.com/lenis@1.1.20/dist/lenis.min.js';
     lenisScript.onload = () => {
         const lenis = new Lenis({
-            autoRaf: true,
             duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
             touchMultiplier: 2
         });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        
+        requestAnimationFrame(raf);
     };
     document.head.appendChild(lenisScript);
 })();
