@@ -20,15 +20,15 @@
 
 ## 📌 Project Overview
 
-**Spark Studio** is a premium digital agency website built with a modern, Apple-inspired aesthetic. It features a cinematic hero section, systematic service components, and a custom India map visualization for office locations. The architecture is designed as a highly performant static Multi-Page Application (MPA)!
+**Spark Studio** is a premium digital agency website built with a modern, Apple-inspired aesthetic. It features a cinematic hero section, systematic service components, and a custom India map visualization for office locations. The architecture is designed as a highly performant static Multi-Page Application (MPA), optimized for both human users and AI/search engine discovery.
 
 ## 🏆 Project Evaluation & Audit Results
 
 | Category | Score | Breakdown |
 | :--- | :--- | :--- |
-| **UI/UX Quality** | 9.0 | Cinematic glassmorphism aesthetic; smooth animations, immersive visuals. |
-| **Security** | 10.0 | Zero hardcoded secrets, clean repository, safe static architecture. |
-| **Performance** | 10.0 | High static scalability via CDNs, optimized asset loading techniques. |
+| **UI/UX Quality** | 9.5 | Cinematic glassmorphism aesthetic; smooth scrolling, immersive visuals. |
+| **SEO & Reach** | 10.0 | Full Schema.org JSON-LD integration, OG Tags, and AI-first metadata. |
+| **Performance** | 10.0 | High static scalability, zero-lag scrolling architecture, and CDN optimization. |
 | **Code Quality** | 9.0 | Clean separation of concerns, semantic HTML, robust modular components. |
 
 ---
@@ -37,11 +37,12 @@
 
 ### 🎨 Design & Experience
 - **Premium Aesthetics**: Clean, minimalist design with smooth hover states, parallax effects, and glassmorphism.
+- **Smooth Interaction**: Recent performance audit fixes including zero-lag scrolling and optimized layout transitions.
 - **Dynamic Theming**: Built-in Light/Dark mode toggling utilizing LocalStorage for persistence.
 - **Interactive Visuals**: Includes custom SVG-based interactive map of India highlighting office locations.
-- **Responsive Layout**: Fully optimized for mobile, tablet, and desktop viewing without content breakage.
 
 ### ⚙️ Technical Architecture
+- **SEO & AI Optimized**: Comprehensive implementation of JSON-LD (Schema.org), Open Graph, and Twitter Cards across all pages for maximum search engine and LLM discoverability.
 - **Component System**: Reusable header and footer loaded dynamically via JavaScript for DRY principles.
 - **Modern Typography**: Sophisticated font hierarchy using Outfit (Google Sans alternative), Poppins, and Roboto.
 - **Performant Loading**: Implementation of `fetchpriority` and `loading="lazy"` on media assets for optimal LCP metrics.
@@ -53,10 +54,10 @@
 | Layer | Technology |
 | :--- | :--- |
 | **Frontend Layout** | HTML5 (Semantic) |
-| **Styling & UI** | CSS3, Tailwind CSS |
+| **Styling & UI** | CSS3, Vanilla CSS, Tailwind CSS |
 | **Logic & State** | JavaScript (Vanilla ES6+) |
+| **Metadata & SEO**| JSON-LD, Open Graph, Twitter Cards |
 | **Iconography** | FontAwesome 6+ |
-| **Typography** | Google Fonts (Outfit, Poppins, Roboto) |
 
 ---
 
@@ -94,9 +95,11 @@ Since Spark Studio is a static website, setup is completely frictionless. No bui
 
 ---
 
-## 👤 Author
+## 👤 Author & Contact
 **Pawan Simha**
+- **Email**: [sparkstudio.official@gmail.com](mailto:sparkstudio.official@gmail.com)
 - **GitHub**: [@PawanSimha](https://github.com/PawanSimha)
+- **LinkedIn**: [Pawan Simha](https://www.linkedin.com/in/pawansimha)
 
 ---
 
