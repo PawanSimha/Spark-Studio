@@ -5,8 +5,14 @@
 <h1 align="center">Spark Studio</h1>
 <p align="center">
   <strong>Creative Digital Agency Platform</strong><br>
-  <em>A premium portfolio and agency website specializing in branding, design, and immersive technology.</em>
+  <em>A premium digital agency platform specializing in branding, design, and immersive technology.</em>
 </p>
+
+---
+
+## 📅 Project Timeline
+**August 2025 – October 2025**
+*Developed as a high-performance demonstration of modern web aesthetics and SEO/AI integration.*
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
@@ -21,6 +27,13 @@
 ## 📌 Project Overview
 
 **Spark Studio** is a premium digital agency website built with a modern, Apple-inspired aesthetic. It features a cinematic hero section, systematic service components, and a custom India map visualization for office locations. The architecture is designed as a highly performant static Multi-Page Application (MPA), optimized for both human users and AI/search engine discovery.
+
+## 🛠️ Top 5 Skills Used
+1. **UI/UX Design**: Cinematic Glassmorphism & Responsive Web Design.
+2. **Front-End Development**: Semantic HTML5, CSS3, ES6+ JavaScript.
+3. **SEO & AI Optimization**: JSON-LD, Schema.org, & Advanced Meta Tagging.
+4. **Performance Engineering**: LCP Optimization & Static Site Scalability.
+5. **Brand Strategy**: Digital Marketing & Media Production Integration.
 
 ## 🏆 Project Evaluation & Audit Results
 
